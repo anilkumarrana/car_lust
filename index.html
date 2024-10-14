@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      </style>
+    <title>carlust</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+     <div class="navbar">
+       <div class="navbar-logo">
+         <a href=""><img src="image/nlogo.jpeg" alt="">
+         </div></a>
+       <div class="navbar-list">
+         <nav>
+            <ul>
+                <a href=""><li>Deals</li></a>
+                <a href=""><li>Fleets</li></a>
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Contact Us</li></a>
+            </ul>
+         </nav>
+       </div>
+     </div>
+
+
+     <div class="main-body">
+        <div class="main-body-heading">
+          <div class="box">
+            <i class="fas fa-thumbs-up"></i>
+            <p>100% Trusted car rental platform in the World</p>
+          </div>
+           <h1>Find Your Best <br><span>Dream Car for Rental</span> </h1>
+           <a href=""><button class="view-button">View all Cars<i class="fas fa-arrow-right"></i></button></a> 
+        </div>
+        <div class="car-image">
+            <img src="image/car-right.png" alt=""> 
+        </div>
+     </div>
+
+
+       <div class="search-box-banner">
+           <div class="search-box-banner-details">
+              <p>Self Drive Cars for Rent in</p>
+                <div class="search-box-banner-details-location1">
+                  <i class="fas fa-map-marker-alt"></i>
+
+                <button class="find_location_button" onclick="show_location()">Find Location</button>
+                <div class="find_location">
+                    <ul>
+                        <li>Location 1</li>
+                        <li>Location 2</li>
+                        <li>Location 3</li>
+                    </ul>
+                </div>
+                </div>
+                
+              </div>
+           <div class="search-box-banner-details" onclick="show_plan ()">
+              <p>Choose Your Plan</p>
+                <div class="search-box-banner-details-location1">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Daily Rentals</p>
+                </div>
+           </div>
+           <div class="search-box-banner-details">
+              <p>Pickup Time</p>
+                <div class="search-box-banner-details-location2">
+                  <input type="date" name="date">
+                  <input type="time" name="time" id ="time_set">
+                </div>
+           </div>
+           <div class="search-box-banner-details">
+              <p>Return Date</p>
+                <div class="search-box-banner-details-location2">
+                  <input type="date" name="date">
+                  <input type="time" name="time" id ="time_set2">
+                </div>
+           </div>
+           <div class="search-box-banner-details">
+
+          <div class="search-box-banner-details-location3" onclick="demo()" >
+              <a href=""><i class="fas fa-search"></i>
+              <p>Search</p></a>
+          </div>
+           </div>
+       </div>
+         
+       <!-- <div class="find_location" >
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+         <div class="find_location_list">
+          <a href="">Jaipur</a>
+         </div>
+       </div>
+        -->
+       <div class="find_plan">
+         <div class="find_plan_list">
+            <a href="">hiii</a>
+         </div>
+         <div class="find_plan_list">
+            <a href="">hiii</a>
+         </div>
+         <div class="find_plan_list">
+            <a href="">hiii</a>
+         </div>
+       </div>
+
+       <div class="booking">
+        <h2>HOW TO BOOK A CAR ONLINE</h2>
+         <div class="booking_logo"></div>
+           <p>You can Experience a Carlust Self Drive Car within 2 minutes in just 4 Steps</p>
+       </div>
+       
+       <div class="services">
+         <div class="services_details">
+           <div  class="services_details_icon">
+            <div class="services_details_icon_img">
+               <img src="image/services-icon-01.svg" alt="" title="Best car">
+            </div>
+           </div>
+           <p>Select City & Travel Dates</p>
+         </div>
+         <div class="services_details">
+           <div  class="services_details_icon2">
+            <div class="services_details_icon_img2">
+               <img src="image/services-icon-01.svg" alt="">
+            </div>
+           </div>
+           <p>Choose Car & Delivery Mode</p>
+         </div>
+         <div class="services_details">
+           <div  class="services_details_icon3">
+            <div class="services_details_icon_img3">
+               <img src="image/services-icon-01.svg" alt="">
+            </div>
+           </div>
+           <p>Verify Yourself</p>
+         </div>
+         <div class="services_details">
+           <div  class="services_details_icon3">
+            <div class="services_details_icon_img3">
+               <img src="image/services-icon-01.svg" alt="">
+            </div>
+           </div>
+           <p>Make Payment</p>
+         </div>
+       </div>
+
+        <div class="Choose">
+          <h1>Why Choose Us</h1>
+          </div>
+
+          <div class="choose">
+            <div class="choose_detail">
+              <i class="fa-solid fa-infinity"></i>
+              <p>Multiple Payment Options</p>
+              <p>Don’t let payment mode come in between you and your dream car! Choose from credit card, debit card, net banking, or UPI</p>
+            </div>
+            <div class="choose_detail">
+              <i class="fa-solid fa-car"></i>
+              <p>Multiple Payment Options</p>
+              <p>Don’t let payment mode come in between you and your dream car! Choose from credit card, debit card, net banking, or UPI</p>
+            </div>
+            <div class="choose_detail">
+              <i class="fa-brands fa-digital-ocean"></i>
+              <p>Multiple Payment Options</p>
+              <p>Don’t let payment mode come in between you and your dream car! Choose from credit card, debit card, net banking, or UPI</p>
+            </div>
+          </div>
+          <div>
+         <div class="Selling">
+            <h1>Best Selling Models</h1>
+            <div class="Selling_car">
+              <div class="Selling_car_list">
+                 <div class="Selling_car_list_img">
+                    <img src="./image/Hyundai_Creta.jpg" alt="">
+                    <div class="Selling_car_list_details">
+                      <i class="fa-solid fa-car"></i>
+                      <p>Hyundai</p>
+                        <h2>TVU 300</h2>
+                        <a href="#">View Details</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="Selling_car_list">
+                 <div class="Selling_car_list_img">
+                    <img src="./image/Mahindra_Scorpio.jpg" alt="">
+                    <div class="Selling_car_list_details">
+                      <i class="fa-solid fa-car"></i>
+                      <p>Hyundai</p>
+                        <h2>TVU 300</h2>
+                        <a href="#">View Details</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="Selling_car_list">
+                 <div class="Selling_car_list_img">
+                    <img src="./image/Mahindra_XUV_300.jpg" alt="">
+                    <div class="Selling_car_list_details">
+                      <i class="fa-solid fa-car"></i>
+                      <p>Hyundai</p>
+                        <h2>TVU 300</h2>
+                        <a href="#">View Details</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="Selling_car_list">
+                 <div class="Selling_car_list_img">
+                    <img src="./image/Maruti_Ciaz.jpg" alt="">
+                    <div class="Selling_car_list_details">
+                      <i class="fa-solid fa-car"></i>
+                      <p>Maruti</p>
+                        <h2>TVU 300</h2>
+                        <a href="#">View Details</a>
+                    </div>
+                  </div>
+            </div>
+            
+          </div>
+          <a href="#">See More Car</a>
+         </div>
+         
+         </div>
+   
+        <div class="People_say">
+           <h1>What people say about us</h1>
+            <div class="People_say_details">
+              <!-- <i class="fa-solid fa-arrow-left"></i> -->
+           <div class="People_say_cart">
+            <div class="People_say_cart_img">
+              <img src="./image/Aman.jpg" alt="" >
+              <label for="">Aman</label>
+              <label for="">Bihar,India</label>
+            </div>
+            <div class="People_say_cart_rate">
+              <p>Thank you for providing unlimited kilometers. Our road trip with friends was so stress free and fun because we knew we did not have to pay anything over the money each of us pooled in no matter where all we went.</p>
+              <div class="People_say_cart_rate_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+           </div>
+            </div>
+           <div class="People_say_cart">
+            <div class="People_say_cart_img">
+              <img src="./image/dipanshu.jpg" alt="" >
+              <label for="">Dipanshu</label>
+              <label for="">Bihar,India</label>
+            </div>
+            <div class="People_say_cart_rate">
+              <p>Thank you very much for your quality service. We take this privilege to thank you for the efforts team made going extra mile for doorstep service. We welcome and really appreciate this gesture.</p>
+              <div class="People_say_cart_rate_icon2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+           </div>
+            </div>
+           <div class="People_say_cart">
+            <div class="People_say_cart_img">
+              <img src="./image/Anil.jpg" alt="" >
+              <label for="">Anil</label>
+              <label for="">Jharkhand,India</label>
+            </div>
+            <div class="People_say_cart_rate">
+              <p>Cheapest yet the most wonderful cars. I loved how MyChoize provides Japanese quality at Indian Prices. Great fun and amazing cars. Thanks</p>
+              <div class="People_say_cart_rate_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+           </div>
+          </div>
+          <!-- <i class="fa-solid fa-arrow-right"></i> -->
+          </div>
+        </div>
+        <div class="faq_section">
+
+        <div class="faq_section_detail">
+           <h1>FAQ’s</h1>
+           <p>Frequently Asked Questions.</p>
+          <button type="button" title="Click me">View More</button>
+        </div>
+
+      <div class="faq_section-cart" >
+
+        <button onclick="demo_faq()">What do MyChoize Car rental service provides in Jaipur?
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="faq_section-pannel" id="faq_demo">
+          <p>MyChoize Car Rental service in Jaipur offers self-driving cars on an hourly, daily, or weekly basis, giving you complete independence and privacy without having to worry about maintenance and servicing fees and insurance at an affordable price.</p>
+        </div>
+
+        <button  onclick="demo_faq2()">What do MyChoize Car rental service provides in Jaipur?
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="faq_section-pannel" id="faq_demo2">
+          <p>MyChoize Car Rental service in Jaipur offers self-driving cars on an hourly, daily, or weekly basis, giving you complete independence and privacy without having to worry about maintenance and servicing fees and insurance at an affordable price.</p>
+        </div>
+
+        <button onclick="demo_faq3()">What do MyChoize Car rental service provides in Jaipur?
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="faq_section-pannel" id="faq_demo3">
+          <p>MyChoize Car Rental service in Jaipur offers self-driving cars on an hourly, daily, or weekly basis, giving you complete independence and privacy without having to worry about maintenance and servicing fees and insurance at an affordable price.</p>
+        </div>
+
+        <button onclick="demo_faq4()">What do MyChoize Car rental service provides in Jaipur?
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="faq_section-pannel" id="faq_demo4">
+          <p>MyChoize Car Rental service in Jaipur offers self-driving cars on an hourly, daily, or weekly basis, giving you complete independence and privacy without having to worry about maintenance and servicing fees and insurance at an affordable price.</p>
+        </div>
+        <button onclick="demo_faq5()">What do MyChoize Car rental service provides in Jaipur?
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="faq_section-pannel" id="faq_demo5">
+          <p>MyChoize Car Rental service in Jaipur offers self-driving cars on an hourly, daily, or weekly basis, giving you complete independence and privacy without having to worry about maintenance and servicing fees and insurance at an affordable price.</p>
+        </div>
+        <button onclick="demo_faq6()">What do MyChoize Car rental service provides in Jaipur?
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="faq_section-pannel" id="faq_demo6">
+          <p>MyChoize Car Rental service in Jaipur offers self-driving cars on an hourly, daily, or weekly basis, giving you complete independence and privacy without having to worry about maintenance and servicing fees and insurance at an affordable price.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <section>
+      <h1>Self-Drive Car Rental Prices in Jaipur</h1>
+      <table>
+          <tr>
+            <th>Fleet</th>
+            <th colspan="3">Daily Rental Pricing starting from</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>120 Kms</td>
+            <td>300 Kms</td>
+            <td>Unlimited Kms</td>
+          </tr>
+          <tr>
+            <td>Maruti Swift Dzire</td>
+            <td>Rs. 1699</td>
+            <td>Rs. 1999</td>
+            <td>Rs. 2599</td>
+          </tr>
+          <tr>
+            <td>Mahindra XUV 300</td>
+            <td>Rs. 1999</td>
+            <td>Rs. 2399</td>
+            <td>Rs. 3099</td>
+          </tr>
+          <tr>
+            <td>Jeep Compass</td>
+            <td>Rs. 2199</td>
+            <td>Rs. 2599</td>
+            <td>Rs. 3399</td>
+            <!-- <td>Jeep Compass</td> -->
+          </tr>
+          <tr>
+            <td>Mahindra Scorpio</td>
+            <td>Rs. 2599</td>
+            <td>Rs. 3099</td>
+            <td>Rs. 3999</td>
+          </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Self-Drive Car with MyChoize</h1>
+        <div class="self_drive">
+          <div class="self_drive_details">
+          <h2>Self-Drive Cars in Jaipur</h2>
+          <p>Go for MyChoizeself-drive carswhile traveling from Jaipur, traveling to Jaipur, or traveling in Jaipur, and enjoy the life and culture of Jaipur by taking <span>unlimited</span>  pit stops of your choice with thesecar rentals. </p>
+          </div>
+
+          <div class="self_drive_details">
+          <h2>MyChoizeself drive carsoffercar rentals in <span>Jaipur</span> </h2>
+          <p>monthly basis, complementing the travel requirements of your business, leisure, and weekend getaways. MyChoizecar rentalsallow you to drive as much as you want without paying any extra money. Make memories with the privacy and freedom of owning a car without serving any liabilities. Rent aself-drive carat amazing rates and enjoy the travel stress-free. </p>
+          </div>
+
+          <div class="self_drive_details">
+          <h2>MyChoize Online Car Booking in Jaipur</h2>
+          <p>Start with searching and selecting the available car on hire, and book it by paying a small security deposit. Get your identity verified through driver's license and address proof, and get yourself-drive car delivered to your selected location. MyChoizeself drive car hirehas changed the Indian Car Rental Industry with its low pricing and additional benefits.Hire a self-drive car to get the feeling of owning a brand new car without paying the actual price.</p>
+          </div>
+          <div class="self_drive_details">
+          <h2>MyChoize Online Car Booking in Jaipur</h2>
+          <p>Start with searching and selecting the available car on hire, and book it by paying a small security deposit. Get your identity verified through driver's license and address proof, and get yourself-drive car delivered to your selected location. MyChoizeself drive car hirehas changed the Indian Car Rental Industry with its low pricing and additional benefits.Hire a self-drive car to get the feeling of owning a brand new car without paying the actual price.</p>
+          </div>
+          <div class="self_drive_details">
+          <h2>Different Car Brands</h2>
+          <p>At MyChoize you can rent a Marutiself-drive carat unbeatable rates. Opting forcar rentals rather than buying a new car is always a smart choice.Monthly car rentalsat MyChoize can be upgraded or extended after the tenure ends. Maruti car models that you can rent include MARUTI SWIFT DZIRE,MARUTI CIAZ, andMARUTI SWIFT. </p>
+          </div>
+
+          <div class="self_drive_details">
+          <h2>Hyundaiself-drive cars</h2>
+          <p>Get a brand new Hyundaiself-drive carat MyChoize, without buying or owning one. With no downpayment or road tax and additional costs, rent a self-drive car.Best self-drive carsincludeHYUNDAI CRETA, which can be rented at cheap rates.</p>
+          </div>
+          <div class="self_drive_details">
+          <h2>MyChoize Car Hire at Jaipur International Airport</h2>
+          <p>A unique quality that MyChoizecar rentalsbehold is anywhere delivery, irrespective of your location. You can either pick the car up from a predefined location or have your car home delivered and picked up from your doorstep, office, or airport. You can book the pickup and delivery at  Jaipur International Airport for lessened hassle of cab booking and waiting. Book yourmonthly car rentaltoday at guaranteed lowest prices</p>
+          </div>
+          <div class="self_drive_details">
+          <h2>Why opt for MyChoize Self-Drive Car Rental in Jaipur</h2>
+          <p> <span>MyChoizeself-drive car</span> rentalsgive you the freedom and privacy you desire with the convenience of driving at your own pace. Whether you are on a business trip or leisure holiday, book a self-drive car on rentand explore the town hassle free by driving a car of your choice as you own it. MyChoize’s best self drive carsoffer a wide range ofcheap self-drive cars for you to choose from, including compact hatchbacks, sedans, SUVs, MUVs, and luxury cars. Go get thebestself-drive  <span>carsin Jaipur</span> with MyChoize.</p>
+          </div>
+
+          <div class="self_drive_details">
+          <h2>MyChoize Car Hire at Jaipur International Airport</h2>
+          <p>MyChoize offers hassle-free ownership of Toyotaself-drive cars at best-in-class pricing. With easy returns, a re-buy policy, and an up-gradation facility, MyChoize has streamlined the process of owning a brand new car. Own a <span>Toyota</span> Innova Crystawithout additional costs, and  <span>travel unlimited kilometers.</span></p>
+          </div>
+
+          <div class="self_drive_details">
+          <p>Book a self-drive car at zero down payments and no waiting period. Experience the fun of driving your favorite care with MyChoize</p>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <div class="footer_section">
+          <div class="footer_section_logo">
+             <img src="./image/nlogo.jpeg" alt="">
+             <p>MyChoize self drive cars is a self drive brand owned by ORIX, Japan’s second largest self drive car rental company</p>
+             <div class="footer_section_logo_icon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+             </div>
+          </div>
+          <div class="footer_section_about">
+            <label>About</label>
+            <li type="none"><a href="#">Deals</a></li>
+            <li type="none"><a href="#">Contact</a></li>
+            <li type="none"><a href="#">FAQs</a></li>
+            <li type="none"><a href="#">Terms & Conditions</a></li>
+            <li type="none"><a href="#">Privacy Policy</a></li>
+          </div>
+          <div class="footer_section_links">
+            <label>Helpful Links</label>
+            <li type="none"><a href="#">Home</a></li>
+            <li type="none"><a href="#">About</a></li>
+            <li type="none"><a href="#">Blogs</a></li>
+            <li type="none"><a href="#">Sitemap</a></li>
+            <li type="none"><a href="#">Agent Login</a></li>
+          </div>
+          <div class="footer_section_reach">
+            <label>Reach Us</label>
+            <div class="reach_location">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Carlust private limited . Plot No - sp43,Kukas jaipur , Rajsthan,Pincode no:-302028</p>
+            </div>
+            <div class="reach_location">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="#">carlust123@gmail.com</a>
+            </div>
+            <div class="reach_location">
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">8294236223</a>
+            </div>
+          </div>
+          <div></div>
+      </div>
+    </footer>
+<script src="app.js"></script>
+
+</body>
+</html>
